@@ -1,0 +1,19 @@
+{
+  "name": "@auth/mongoose-adapter-module",
+  "version": "0.0.1",
+  "private": true,
+  "license": "BSD-3-Clause",
+  "main": "src/index.ts",
+  "devDependencies": {
+    "@nestjs/common": "^8.1.1",
+    "@nestjs/core": "^8.1.1",
+    "@nestjs/mongoose": "^9.2.1",
+    "mongoose": "^6.9.1"
+  },
+  "peerDependencies": {
+    "@nestjs/common": "^8.1.1",
+    "@nestjs/core": "^8.1.1",
+    "@nestjs/mongoose": "^9.2.1",
+    "mongoose": "^6.9.1"
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "name": "@auth/service-entrypoint",
+  "version": "0.0.1",
+  "private": true,
+  "license": "BSD-3-Clause",
+  "main": "src/index.ts",
+  "scripts": {
+    "build": "esbuild src/index.ts --bundle --platform=node --target=node18.13 --outdir=dist",
+    "dev": "esbuild src/index.ts --watch --bundle --platform=node --target=node18.13 --outdir=dist | nodemon dist/index.js",
+    "start": "node dist/index.js"
+  },
+  "devDependencies": {
+    "@auth/application-module": "workspace:0.0.1",
+    "@auth/cqrs-adapter-module": "workspace:0.0.1",
+    "@auth/infrastructure-module": "workspace:0.0.1",
+    "@auth/jwt-adapter-module": "workspace:0.0.1",
+    "@auth/mongoose-adapter-module": "workspace:0.0.1",
+    "@auth/passport-adapter-module": "workspace:0.0.1",
+    "@auth/rest-adapter-module": "workspace:0.0.1",
+    "@nestjs/common": "^8.1.1",
+    "@nestjs/core": "^8.1.1",
+    "@nestjs/cqrs": "^8.0.0",
+    "@nestjs/microservices": "^8.1.1",
+    "@nestjs/mongoose": "^9.2.1",
+    "@nestjs/platform-express": "^8.1.1",
+    "class-transformer": "^0.4.0",
+    "class-validator": "^0.13.1",
+    "esbuild": "^0.17.8",
+    "mongodb": "^5.0.1",
+    "mongoose": "^6.9.1",
+    "nodemon": "^2.0.20",
+    "reflect-metadata": "0.1.13",
+    "rxjs": "7.4.0",
+    "source-map-support": "^0.5.21"
+  }
+}

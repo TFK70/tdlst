@@ -1,0 +1,13 @@
+{
+  "name": "tdlst",
+  "license": "BSD-3-Clause",
+  "workspaces": [
+    "auth/**/*",
+    "todo/**/*"
+  ],
+  "devDependencies": {
+    "@types/node": "^18.13.0",
+    "typescript": "^4.9.5"
+  },
+  "packageManager": "yarn@3.4.1"
+}

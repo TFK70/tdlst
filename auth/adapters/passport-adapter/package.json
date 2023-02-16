@@ -1,0 +1,25 @@
+{
+  "name": "@auth/passport-adapter-module",
+  "version": "0.0.1",
+  "private": true,
+  "license": "BSD-3-Clause",
+  "main": "src/index.ts",
+  "dependencies": {
+    "passport-jwt": "^4.0.1",
+    "passport-local": "^1.0.0"
+  },
+  "devDependencies": {
+    "@auth/infrastructure-module": "workspace:0.0.1",
+    "@auth/jwt-adapter-module": "workspace:0.0.1",
+    "@nestjs/common": "^8.1.1",
+    "@nestjs/core": "^8.1.1",
+    "@nestjs/passport": "^9.0.3"
+  },
+  "peerDependencies": {
+    "@auth/infrastructure-module": "workspace:0.0.1",
+    "@auth/jwt-adapter-module": "workspace:0.0.1",
+    "@nestjs/common": "^8.0.4",
+    "@nestjs/core": "^8.0.4",
+    "@nestjs/passport": "^9.0.3"
+  }
+}
